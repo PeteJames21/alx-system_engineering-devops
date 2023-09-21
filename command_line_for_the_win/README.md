@@ -8,7 +8,7 @@ The screenshots are uploaded to the ALX sandbox environment via `sftp` using the
 sftp <user>@<host>
 ```
 3. Enter the password when prompted
-4. `cd` into the `root` directory and create the `alx-system_engineering-devops/command_line_for_the_win/` using the `mkdir` command. The `-p` flag does not work in `sftp`, so the two directories are created using two successive `mkdir` commands
+4. `cd` into the `root` directory and create the `alx-system_engineering-devops/command_line_for_the_win/` directory using the `mkdir` command. The `-p` flag does not work in `sftp`, so the two directories are created using two successive `mkdir` commands
 5. Copy each screenshot to the remote directory using the command:
 ```
 put file-name.png
