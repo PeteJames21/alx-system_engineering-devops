@@ -6,7 +6,8 @@ fname="school"
 if [ -e "$fname" ]; then
     echo "$fname file exists"
 
-    if [ -s "$fname" ]; then
+    file_size=$(stat -c %s "$fname")
+    if [ "$file_size" -eq 0 ]; then
         echo "$fname file is empty"
     else
         echo "$fname file is not empty"
