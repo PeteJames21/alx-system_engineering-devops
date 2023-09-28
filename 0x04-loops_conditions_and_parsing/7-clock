@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Demonstrates use of nested while loops
 
 hrs=0
 minutes=1
