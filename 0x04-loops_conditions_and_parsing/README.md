@@ -55,3 +55,6 @@ Write a Bash script that displays the content of the file `/etc/passwd` and disp
 - user id
 - home directory of the user
 Use a `while` loop to loop through each line
+
+## 101-tell_the_story_of_passwd
+Write a Bash script that displays the content of the file `/etc/passwd`, using the `while` loop + `IFS`.
