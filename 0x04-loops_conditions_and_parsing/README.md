@@ -29,3 +29,9 @@ Use a `while` loop with a `case` statement
 Write a Bash script that displays the time for 12 hours and 59 minutes:
 - display hours from 0 to 12
 - display minutes from 1 to 59
+
+## 8-for_ls
+Write a Bash script that displays:
+- The content of the current directory
+- In a list format
+- Where only the part of the name after the first dash is displayed

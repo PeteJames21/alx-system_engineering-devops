@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Use the cut command to display truncated file names
+
+for fname in *; do
+    echo "$fname" | cut -d "-" -f 2
+done
