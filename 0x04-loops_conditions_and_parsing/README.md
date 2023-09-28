@@ -48,3 +48,10 @@ Write a Bash script that gives you information about the `school` file.
 
 ## 10-fizzbuzz
 Implement the FizzBuzz algorithm
+
+## 100-read_and_cut
+Write a Bash script that displays the content of the file `/etc/passwd` and displays the:
+- username
+- user id
+- home directory of the user
+Use a `while` loop to loop through each line
