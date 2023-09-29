@@ -20,3 +20,6 @@ Write a Bash script that displays To infinity and beyond indefinitely, with a sl
 
 ## 5-dont_stop_me_now
 Use the `kill` command to stop the `4-to_infinity_and_beyond` process
+
+## 6-stop_me_if_you_can
+Without using `kill` or `killall`, write a Bash script that stops the `4-to_infinity_and_beyond` process.
