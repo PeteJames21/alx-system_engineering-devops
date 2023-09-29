@@ -17,3 +17,6 @@ Without using `ps`, write a Bash script that displays the PID, along with the pr
 
 ## 4-to_infinity_and_beyond
 Write a Bash script that displays To infinity and beyond indefinitely, with a sleep of 2 seconds in between each iteration.
+
+## 5-dont_stop_me_now
+Use the `kill` command to stop the `4-to_infinity_and_beyond` process
