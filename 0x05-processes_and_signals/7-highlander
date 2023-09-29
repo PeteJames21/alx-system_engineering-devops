@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Print a string indefinitely and refuse to be killed when a SIGTERM is issued.
+
+handleSIGTERM() {
+    echo 'I am invincible!!!'
+}
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+    trap handleSIGTERM SIGTERM
+done

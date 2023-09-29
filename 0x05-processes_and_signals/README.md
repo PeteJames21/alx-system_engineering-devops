@@ -23,3 +23,9 @@ Use the `kill` command to stop the `4-to_infinity_and_beyond` process
 
 ## 6-stop_me_if_you_can
 Without using `kill` or `killall`, write a Bash script that stops the `4-to_infinity_and_beyond` process.
+
+## 7-highlander
+Write a Bash script that displays:
+- `To infinity and beyond` indefinitely
+- With a `sleep 2` in between each iteration
+- `I am invincible!!!` when receiving a SIGTERM signal
