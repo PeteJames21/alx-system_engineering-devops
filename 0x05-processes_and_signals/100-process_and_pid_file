@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Print a string infinitely and handle SIGTERM, SIGINT, and SIGQUIT
+# NOTE: this script must be run with administrative privileges
+
+cleanup_and_exit() {
+  rm /var/run/myscript.pid
+  exit
+}
+
+handleSIGTERM() {
+    echo "I hate the kill command"
+    cleanup_and_exit
+}
+
+echo "$$" > /var/run/myscript.pid
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap handleSIGTERM SIGTERM
+  trap cleanup_and_exit SIGQUIT
+done
