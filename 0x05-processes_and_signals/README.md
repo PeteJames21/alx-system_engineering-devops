@@ -40,3 +40,10 @@ Write a Bash script that:
 - Displays `I hate the kill command` when receiving a `SIGTERM` signal
 - Displays `Y U no love me?!` when receiving a `SIGINT` signal
 - Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a `SIGQUIT` or `SIGTERM` signal
+
+## 102-zombie.c
+Write a C program that creates 5 zombie processes and then enters an inifinite while loop.
+The zombie processes can be identified by executing the compiled C program and then running the following command:
+```
+ps aux | grep -e 'Z+.*<defunct>'
+```
