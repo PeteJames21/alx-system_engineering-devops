@@ -41,6 +41,29 @@ Write a Bash script that:
 - Displays `Y U no love me?!` when receiving a `SIGINT` signal
 - Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a `SIGQUIT` or `SIGTERM` signal
 
+## 101-manage_my_process, manage_my_process
+The `manage_my_process` script:
+- Indefinitely writes `I am alive!` to the file `/tmp/my_process`
+- In between every `I am alive!` message, the program pauses for 2 seconds
+
+The 101-manage_my_process serves as a rudimentary bash init script that manages `manage_my_process`:
+- When passing the argument start:
+  - Starts `manage_my_process`
+  - Creates a file containing its PID in `/var/run/my_process.pid`
+  - Displays `manage_my_process started`
+- When passing the argument stop:
+  - Stops `manage_my_process`
+  - Deletes the file `/var/run/my_process.pid`
+  - Displays `manage_my_process stopped`
+- When passing the argument restart
+  - Stops `manage_my_process`
+  - Deletes the file `/var/run/my_process.pid`
+  - Starts `manage_my_process`
+  - Creates a file containing its PID in `/var/run/my_process.pid`
+  - Displays `manage_my_process` restarted
+- Displays Usage: manage_my_process {start|stop|restart} if any other argument or no argument is passed
+
+
 ## 102-zombie.c
 Write a C program that creates 5 zombie processes and then enters an inifinite while loop.
 The zombie processes can be identified by executing the compiled C program and then running the following command:

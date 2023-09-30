@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Write a string to a file indefinitely using a while loop.
+
+while true; do
+    sudo echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done

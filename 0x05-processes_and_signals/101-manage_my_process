@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# This script serves as the bash init file for `manage_my_process`
+# This script must be run with administrative privileges.
+
+PID_FILE="/var/run/my_process.pid"
+
+case "$1" in
+    "start")
+        ./manage_my_process &
+        echo "$!" > $PID_FILE
+        echo "manage_my_process started"
+    ;;
+    "stop")
+        if [ -e  $PID_FILE ]; then
+            kill "$(cat $PID_FILE)"
+            rm $PID_FILE
+            echo "manage_my_process stopped"
+        fi
+    ;;
+    "restart")
+        if [ -e  $PID_FILE ]; then
+            kill "$(cat $PID_FILE)"
+            rm $PID_FILE
+            ./manage_my_process &
+            echo "$!" > $PID_FILE
+            echo "manage_my_process restarted"
+        fi
+    ;;
+    *) echo "Usage: manage_my_process {start|stop|restart}"
+esac
