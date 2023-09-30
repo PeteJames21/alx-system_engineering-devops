@@ -46,7 +46,7 @@ The `manage_my_process` script:
 - Indefinitely writes `I am alive!` to the file `/tmp/my_process`
 - In between every `I am alive!` message, the program pauses for 2 seconds
 
-The 101-manage_my_process serves as a rudimentary bash init script that manages `manage_my_process`:
+The `101-manage_my_process` script serves as a rudimentary Bash init script that manages `manage_my_process`:
 - When passing the argument start:
   - Starts `manage_my_process`
   - Creates a file containing its PID in `/var/run/my_process.pid`
@@ -62,7 +62,6 @@ The 101-manage_my_process serves as a rudimentary bash init script that manages 
   - Creates a file containing its PID in `/var/run/my_process.pid`
   - Displays `manage_my_process` restarted
 - Displays Usage: manage_my_process {start|stop|restart} if any other argument or no argument is passed
-
 
 ## 102-zombie.c
 Write a C program that creates 5 zombie processes and then enters an inifinite while loop.
