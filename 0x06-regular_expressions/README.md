@@ -9,3 +9,6 @@ Match a string with repeating tokens.
 
 ## 5-beginning_and_end.rb
 The regular expression matches a three-character string that starts with `h` ends with `n` and can have any single character in between.
+
+## 6-phone_number.rb
+Match a 10-digit phone number. The string should only have digits and should not have spaces. 
