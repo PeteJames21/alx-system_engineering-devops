@@ -11,4 +11,7 @@ Match a string with repeating tokens.
 The regular expression matches a three-character string that starts with `h` ends with `n` and can have any single character in between.
 
 ## 6-phone_number.rb
-Match a 10-digit phone number. The string should only have digits and should not have spaces. 
+Match a 10-digit phone number. The string should only have digits and should not have spaces.
+
+## 7-OMG_WHY_ARE_YOU_SHOUTING.rb
+Match uppercase characters regardless of their position in the string. 
