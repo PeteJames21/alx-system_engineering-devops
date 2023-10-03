@@ -6,3 +6,6 @@ Match the string `School`.
 
 ## 1-repetition_token_0.rb, 2-repetition_token_1.rb. 3-repetition_token_2.rb, 4-repetition_token_3.rb
 Match a string with repeating tokens.
+
+## 5-beginning_and_end.rb
+The regular expression matches a three-character string that starts with `h` ends with `n` and can have any single character in between.
