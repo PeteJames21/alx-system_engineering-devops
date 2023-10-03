@@ -4,5 +4,5 @@ This folder contains a collection of Ruby scripts for matching various regular e
 ## 0-simply_match_school.rb
 Match the string `School`.
 
-## 1-repetition_token_0.rb, 2-repetition_token_1.rb
+## 1-repetition_token_0.rb, 2-repetition_token_1.rb. 3-repetition_token_2.rb
 Match a string with repeating tokens.
