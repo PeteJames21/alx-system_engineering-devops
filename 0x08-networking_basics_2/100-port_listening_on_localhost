@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Listen on port 98 on localhost
+# To send data to the listening port, run "nc localhost 98" and type the text to send on each line.
+nc -l 98

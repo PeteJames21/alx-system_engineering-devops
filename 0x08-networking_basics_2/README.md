@@ -7,3 +7,6 @@ Write a Bash script that configures an Ubuntu server (on Docker) with the below 
 
 ## 1-show_attached_IPs
 Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+
+## 100-port_listening_on_localhost
+Write a Bash script that listens on port 98 on `localhost`.
