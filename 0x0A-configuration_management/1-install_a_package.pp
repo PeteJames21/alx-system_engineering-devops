@@ -1,5 +1,9 @@
 # Install flask using pip3
 
+class { 'python':
+  version => 'system',
+}
+
 package { 'python3-pip':
     ensure  => present,
 }
