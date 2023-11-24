@@ -1,6 +1,6 @@
 # Install flask using pip3
 
-package { 'python':
+package { 'python3':
   ensure => present,
 }
 
