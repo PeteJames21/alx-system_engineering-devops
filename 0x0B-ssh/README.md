@@ -23,4 +23,4 @@ Requirements:
 - Your SSH client configuration must be configured to refuse to authenticate using a password
 
 ## 100-puppet_ssh_config.pp
-Use Puppet to set up the configuration file `2-ssh_config`
+Use Puppet to set up the configurations in `2-ssh_config`
