@@ -1,0 +1,7 @@
+# Configure SSH
+
+Host 3.83.253.253
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
+    HostName 3.83.253.253
+    User ubuntu
