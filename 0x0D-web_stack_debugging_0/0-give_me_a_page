@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Start the apache2 service
+systemctl start apache2
