@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Install nginx, set up root page, and set up up a redirect from /redirect_me
 
 apt-get update
 apt-get install -y nginx
