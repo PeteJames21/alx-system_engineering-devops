@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Install Nginx on an ubuntu server,
+# NOTE: - The -y flag is necessary to allow the installation to proceed in non-interactive mode
+#       - The script should be run with root privileges
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Hello World!' > /var/www/html/index.html
+service nginx start
