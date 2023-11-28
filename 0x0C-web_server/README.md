@@ -1,6 +1,8 @@
 # 0x0C. Web server
 This directory contains a series of tasks that demonstrate how to work with a Nginx Web server. Each successive task builds on the previous until a complete (but rudimentary) web server has been developed.
 
+**NOTE**: Tasks 1-4 show how to configure the server using Bash. These tasks could be accomplished more cleanly using Puppet or other configuration management tools. Bash is used here only for educational purposes.
+
 ## 0-transfer_file
 Write a Bash script that transfers a file from our client to a server using `scp`:
 
