@@ -3,7 +3,7 @@
 apt-get update
 apt-get install -y nginx
 
-html_dir="/etc/nginx/html"
+html_dir="/var/www/html"
 index_file="$html_dir/index.html"
 nginx_default_config="/etc/nginx/sites-available/default"
 
@@ -29,14 +29,19 @@ if [ -e "$nginx_default_config" ]; then
     printf %s "server {
     listen 80;
     listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.htm;
+    root   /var/www/html;
+    index  index.html index.htm index.nginx-debian.html;
     location /redirect_me {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
 }" > "$nginx_default_config"
 else
     >&2 echo "Error: Nginx default config file not found at $nginx_default_config."
+fi
+
+# Enable the server block
+if [ ! -e /etc/nginx/sites-enabled/default ]; then
+    ln -s "$nginx_default_config" /etc/nginx/sites-enabled/default
 fi
 
 # Restart Nginx
