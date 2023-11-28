@@ -1,5 +1,5 @@
 # 0x0C. Web server
-This directory contains a series of tasks that demonstrate how to work with a Nginx Web server
+This directory contains a series of tasks that demonstrate how to work with a Nginx Web server. Each successive task builds on the previous until a complete (but rudimentary) web server has been developed.
 
 ## 0-transfer_file
 Write a Bash script that transfers a file from our client to a server using `scp`:
@@ -22,3 +22,6 @@ Contains the domain name for the server hosting this project.
 
 ## 3-redirection
 Configure Nginx to redirect users who visit the page /redirect_me
+
+## 4-not_found_page_404
+Configure Nginx to serve a page containing the string "Ceci n'est pas une page" when returning a 404 error code.
