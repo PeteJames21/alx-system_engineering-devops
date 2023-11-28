@@ -16,3 +16,6 @@ Requirements:
 
 # 1-install_nginx_web_server
 Install Nginx on an ubuntu server and modify the root `/` to return "Hello World!"
+
+# 2-setup_a_domain_name
+Contains the domain name for the server hosting this project.
