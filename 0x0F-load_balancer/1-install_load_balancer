@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Install HAproxy and configure it to route traffic to two servers using
+# the roundrobin algorithm
+
+sudo apt-get -y update
+sudo apt-get -y install haproxy
+
+# Configure HAProxy
+echo "\
+defaults
+    mode http
+
+frontend peterndungu.tech
+    bind :80
+    default_backend webservers
+
+backend webservers
+    balance roundrobin
+    server 342444-web-01 100.26.142.27  check
+    server 342444-web-02 107.22.146.148 check" > /etc/haproxy/haproxy.cfg
+
+sudo systemctl restart haproxy
