@@ -2,7 +2,6 @@
 # Install HAproxy and configure it to route traffic to two servers using
 # the roundrobin algorithm
 
-# Specify the software version for reproducibility.
 sudo apt-get -y install haproxy
 
 # Configure HAProxy
