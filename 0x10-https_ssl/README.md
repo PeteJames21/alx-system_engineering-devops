@@ -31,3 +31,8 @@ Create a certificate using `certbot` and configure HAproxy to accept encrypted t
 Requirements:
 - HAproxy must be listening on port TCP 443
 - HAproxy must be accepting SSL traffic
+
+## 100-redirect_http_to_https
+Configure HAproxy to automatically redirect HTTP traffic to HTTPS:
+- HAproxy should return a `301`
+- HAproxy should redirect HTTP traffic to HTTPS
