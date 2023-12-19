@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Run the 'whoami' command as the user specified in the first commandline argument.
+if [ $# -ne 1 ]; then
+    echo "Usage: ./0-iamsomeonelese USER"
+    exit 1
+fi
+
+sudo -u "$1" whoami
