@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Change user to nginx
 sudo chmod 644 /etc/nginx/nginx.conf
 pkill -f apache2
 sudo sed -i "1i user nginx;" /etc/nginx/nginx.conf
