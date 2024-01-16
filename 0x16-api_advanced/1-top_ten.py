@@ -16,7 +16,8 @@ def top_ten(subreddit):
         'User-agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
     }
     resp = requests.get('http://www.reddit.com/r/{}/hot.json'
-                        .format(subreddit), headers=headers)
+                        .format(subreddit), headers=headers,
+                        allow_redirects=False)
 
     try:
         resp = resp.json().get('data')
