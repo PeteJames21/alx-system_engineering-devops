@@ -15,7 +15,7 @@ def number_of_subscribers(subreddit):
     0 is returned on error
     """
     headers = {
-        'User-agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
+        'User-Agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
     }
     resp = requests.get('http://www.reddit.com/r/{}/about.json'
                         .format(subreddit), headers=headers)

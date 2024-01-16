@@ -13,7 +13,7 @@ def top_ten(subreddit):
     "None" is printed if the subreddit is invalid
     """
     headers = {
-        'User-agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
+        'User-Agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
     }
     resp = requests.get('http://www.reddit.com/r/{}/hot.json'
                         .format(subreddit), headers=headers,
