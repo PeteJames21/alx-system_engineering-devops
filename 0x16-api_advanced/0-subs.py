@@ -9,9 +9,13 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """Return the number of subscribers in the given subredit."""
+    """
+    Return the number of subscribers in the given subredit.
+
+    0 is returned on error
+    """
     headers = {
-        'User-agent': 'MyBrowser:1.0 (by /u/u/Extension_Cookie_886)'
+        'User-agent': 'MyBrowser:1.0 (by /u/Extension_Cookie_886)'
     }
     resp = requests.get('http://www.reddit.com/r/{}/about.json'
                         .format(subreddit), headers=headers)
