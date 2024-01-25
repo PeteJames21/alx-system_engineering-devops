@@ -12,3 +12,8 @@ exec { 'update_nginx_ulimit':
   path    => ['/bin', '/usr/bin'], # paths needed by sed
   require => File[$nginx_config_file]
 }
+
+# Restart nginx
+exec { 'restart_nginx':
+  command    => '/etc/init.d/nginx restart'
+}
